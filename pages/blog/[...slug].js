@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-
+import Link from "next/link"
 function BlogPostPage() {
 
     const router = useRouter();
@@ -7,6 +7,7 @@ function BlogPostPage() {
     return (
         <div>
             <h1>The Blog Post</h1>
+            <Link href="/">Back to home</Link>
         </div>
     )
 }
